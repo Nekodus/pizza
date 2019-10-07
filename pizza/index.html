@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My Css -->
+    <link rel="stylesheet" type="text/css"
+          href="styles/pizza.css">
+
+
+    <title>Poppa's Pizza</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="pictures/pineapple.jpg">
+
+    <link rel="stylesheet" type="text/css"
+          href="styles/pizza.css">
+
+</head>
+<body>
+
+<div class="container" id="main">
+
+    <div class="jumbotron">
+        <h1 class="display-4">Poppa's Pizza</h1>
+        <p class="lead">We make pizzas</p>
+        <hr class="my-4">
+        <p>Hurrah Huzzah!</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">I'm a button</a>
+    </div>
+
+    <img src="pictures/pizzaman.jpg" alt ="Pizza Guy" class="float-right">
+
+
+    <form action="confirmation.html">
+        <fieldset class="form-group">
+            <legend>Contact Info</legend>
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname" placeholder="Peanut">
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Butter">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea class="form-control" id="address" rows="3">Earth</textarea>
+            </div>
+        </fieldset>
+        <fieldset class="from-group">
+            <legend>Pickup or Delivery</legend>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="method" id="pickup" value="option1">
+                <label class="form-check-label" for="pickup">Pickup</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="method" id="delivery" value="option2">
+                <label class="form-check-label" for="delivery">Delivery</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <legend>Select toppings</legend>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="parmesian-cheese" id="parmesian-cheese" name="toppings[]">
+                <label class="form-check-label" for="parmesian-cheese">
+                    Parmesian Cheese
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="pepperoni" id="pepperoni" name="toppings[]">
+                <label class="form-check-label" for="pepperoni">
+                    Pepperoni
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="pineapple" id="pineapple" name="toppings[]">
+                <label class="form-check-label" for="pineapple">
+                    Pineapple
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="peanut-butter" id="peanut-butter" name="toppings[]">
+                <label class="form-check-label" for="peanut-butter">
+                    Peanut Butter
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="woims" id="worms" name="toppings[]" disabled>
+                <label class="form-check-label" for="worms">
+                    Worms
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select a Size</legend>
+            <div class="form-group">
+                <select class="form-control" id="pizza-size">
+                    <option value="none">Select a size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="x-large">Extra Large</option>
+                    <option value="ultimate">The Ultimate Pizza</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <button id="submit" type="submit" class="btn btn-primary">
+            Submit your order
+        </button>
+    </form>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
